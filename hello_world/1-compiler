@@ -1,0 +1,2 @@
+#!/bin/Bash
+gcc -c main.c -o main
