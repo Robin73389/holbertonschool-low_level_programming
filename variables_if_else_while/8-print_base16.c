@@ -9,8 +9,8 @@ int main(void)
 
     for (num = 0; num <= 15; num++)
     {
-        printf("%x", num);
+	putchar(num);
     }
-    printf("\n");
+    putchar('\n');
     return (0);
 }
