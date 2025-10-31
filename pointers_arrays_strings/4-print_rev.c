@@ -1,5 +1,6 @@
 #include"main.h"
 
+
 void print_rev(char *s)
 {	
 	int count, i;
@@ -8,7 +9,8 @@ void print_rev(char *s)
 	{
 	}
 	for (i = count -1 ; i >= 0; i--)
-		_putchar(s[i]);
-
+	{	_putchar(s[i]);
+	}
+	_putchar('\n');
+                        
 }
-
