@@ -1,16 +1,22 @@
-#include "main.h"
-#include <string.h>
-
+#include"main.h"
+#include<string.h>
 void rev_string(char *s)
 {	
-	int count, i;
-
-	for (count = 0; s[count] != '\0'; count++)
+	char tmp;
+	int end = 0;
+	int start = 0;
+	while(s[end] != '\0')	
+		end++;
+	end--;
+	while ( start < end)
 	{
-	}
-	for (i = count -1 ; i >= 0; i--)
-	{
+		tmp = s[start];
+		s[start] = s[end];
+		s[end] = tmp;
+
+		start++;
+		end--;
 	}
 
-		
-}
+
+}		
