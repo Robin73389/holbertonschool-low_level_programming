@@ -1,15 +1,25 @@
 #include <stdio.h>
-int main(){
-    char ch;
 
-    for (ch = 'a'; ch <= 'z'; ch++){
-            putchar(ch);
-    }
-            
+/**
+ * main - print alphabet
+ *
+ * Return: always(0)
+ */
 
-    for (ch = 'A'; ch <= 'Z'; ch++){
-	    putchar(ch);
+int main(void)
+{
+	char ch;
+
+	for (ch = 'a'; ch <= 'z'; ch++)
+	{
+	putchar(ch);
 	}
-    	putchar('\n');
-    return (0);
+
+	for (ch = 'A'; ch <= 'Z'; ch++)
+	{
+		putchar(ch);
+	}
+	putchar('\n');
+
+	return (0);
 }
