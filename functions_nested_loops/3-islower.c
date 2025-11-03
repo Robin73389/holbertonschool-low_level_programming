@@ -1,8 +1,10 @@
 #include"main.h"
 /**
- * write a function that checks for lowercase character
+ * _islower - write a function that checks for lowercase character
  *
- * Return: Always 0.
+ * @c: int majuscule in ascii
+ *
+ * Return: (1) if maj nor (0)
  */
 int _islower(int c)
 {
