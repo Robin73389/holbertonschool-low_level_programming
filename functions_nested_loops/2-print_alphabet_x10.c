@@ -1,12 +1,17 @@
 #include"main.h"
-
+/**
+ *  main - print 10 times the alphabet
+ *
+ *  Return: (0)
+ */
 void print_alphabet_x10(void)
-{	
+{
 	char letters;
 	int numbers;
-	for(numbers = 1; numbers <= 10; numbers++)
+
+	for (numbers = 1; numbers <= 10; numbers++)
 	{
-	
+
 		for (letters = 'a'; letters <= 'z'; letters++)
 		{
 			_putchar(letters);
