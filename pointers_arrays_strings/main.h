@@ -19,4 +19,5 @@ void swap_int(int *a, int *b);
 void print_array(int *a, int n);
 char *string_toupper(char *);
 char *_strchr(char *s, char c);
+char *_memset(char *s, char b, unsigned int n);
 #endif
