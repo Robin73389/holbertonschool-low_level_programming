@@ -17,6 +17,7 @@ int main(int argc, char *argv[])
 		printf("%s\n", argv[5]);
 		printf("%s\n", argv[6]);
 		printf("%s\n", argv[7]);
+		printf("%s\n", argv[8]);
 	}
 	return (0);
 }
