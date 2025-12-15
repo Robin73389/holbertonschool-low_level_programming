@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlib.h>*
+#include <stdlib.h>
 
 /**
  * array_range - This is the name for the function
