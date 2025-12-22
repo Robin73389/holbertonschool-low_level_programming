@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _abs - function which allow the absolute value
@@ -12,6 +13,5 @@ int _abs(int x)
 	{
 		x = (-1 * x);
 	}
-	_putchar(x);
-	return (0);
+	return (x);
 }
