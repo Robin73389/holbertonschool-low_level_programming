@@ -1,9 +1,11 @@
 #include"main.h"
-/*
- * the function reset_to_98(int *n)
- * is used to transform my value
+
+/**
+ * reset_to_98 - This is the name for the function
+ * @n: This is the first caractére
  */
+
 void reset_to_98(int *n)
 {
-	*n = 98;
+	n[0] = 98;
 }
