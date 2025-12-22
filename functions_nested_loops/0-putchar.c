@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * main - This is the function main
+ * Return: (0)
+ */
+
 int main(void)
 {
 
