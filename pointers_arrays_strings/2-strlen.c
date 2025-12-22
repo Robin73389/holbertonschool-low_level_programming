@@ -1,12 +1,17 @@
 #include"main.h"
 #include<string.h>
 #include<stdio.h>
+
+/**
+ * _strlen - This is the name for the function
+ * @s: This is the string
+ * Return: (l)
+ */
 int _strlen(char *s)
 {
-	int count;
+	int l;
 
-	for ( count = 0; *s != '\0'; s++)
-		count ++;	
+	l = strlen(s);
 
-	return count;
+	return (l);
 }
