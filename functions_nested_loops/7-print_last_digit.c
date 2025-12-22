@@ -7,14 +7,13 @@
  */
 int print_last_digit(int n)
 {
-    int ld;
 
-    ld = n % 10;        /* récupère le dernier chiffre */
+	n = n % 10;
 
-    if (ld < 0)         /* si négatif, on le rend positif */
-        ld = -ld;
+	if (n < 0)
+		n = -n;
 
-    _putchar(ld + '0'); /* conversion entier -> caractère ASCII */
+	_putchar(n + '0');
 
-    return (ld);
+	return (0);
 }
