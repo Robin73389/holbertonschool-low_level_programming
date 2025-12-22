@@ -1,13 +1,23 @@
 #include"main.h"
 
+/**
+ * print_most_numbers - This is the name the function
+ */
+
 void print_most_numbers(void)
-{	
-	int n = 48;
-	while(n <= 57)
-	{	
-		if( n != '2' && n != '4')	
-		_putchar(n);
-		n++;
+{
+
+	char c;
+
+	for (c = '0'; c <= '9'; c++)
+	{
+		if ((c == '2') || (c == '4'))
+		{
+		}
+		else
+		{
+			_putchar(c);
+		}
 	}
 	_putchar('\n');
 }
