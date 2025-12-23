@@ -4,24 +4,22 @@
  * create_array - Write a function that creates an array of chars,
  * @size: size is the number of cells in the table
  * @c: is the character I want to use
- * Return: (tableau)
+ * Return: (ptr)
  */
 char *create_array(unsigned int size, char c)
 {
-	char *tableau = malloc(size * sizeof(char));
+	char *ptr;
 	unsigned int i;
 
-	if (size == 0)
+	ptr = malloc(size * sizeof(char));
+	if (ptr == NULL)
 	{
 		return (NULL);
 	}
-	if (tableau == NULL)
+
+	for (i = 0; i < size; i++)
 	{
-		return (NULL);
+		ptr[i] = c;
 	}
-	for (i = 0; i <= size; i++)
-	{
-		tableau[i] = c;
-	}
-	return (tableau);
+	return (ptr);
 }
