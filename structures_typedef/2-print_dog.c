@@ -3,10 +3,11 @@
 /**
  * print_dog - the name for the function
  * @d: this is the pointer
- * Return:
+ *
  */
 void print_dog(struct dog *d)
 {
+
 	if (d == NULL)
 		return;
 
@@ -21,6 +22,5 @@ void print_dog(struct dog *d)
 		printf("Owner: (nil)\n");
 	else
 		printf("Owner: %s\n", d->owner);
-
 
 }
