@@ -1,9 +1,12 @@
 #include"main.h"
+#include<stdio.h>
+
+/**
+ * _puts - This is the name for the function puts
+ * @str: This is the arrays
+ */
 
 void _puts(char *str)
 {	
-	int count;
-	for (count = 0; str[count]!= '\0'; count++)
-		_putchar(str[count]);
-	_putchar('\n');
+	puts(str);
 }
