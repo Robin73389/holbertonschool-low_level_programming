@@ -1,5 +1,9 @@
 #include "main.h"
 
+/**
+ * puts_half - THis is the name for the function
+ * @str: This is the string
+ */
 
 void puts_half(char *str)
 {
