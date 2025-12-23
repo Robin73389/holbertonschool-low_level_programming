@@ -9,6 +9,7 @@
 char *_strdup(char *str)
 {
 	char *ptr;
+	int i;
 
 
 	if (str == NULL)
@@ -22,7 +23,10 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	strcpy(ptr, str);
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		ptr[i] = str[i];
+	}
 
 	return (ptr);
 
