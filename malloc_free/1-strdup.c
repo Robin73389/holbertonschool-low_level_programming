@@ -22,7 +22,9 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	ptr = strdup(str);
+	strcpy(ptr, str);
 
 	return (ptr);
+
+	free(ptr);
 }
