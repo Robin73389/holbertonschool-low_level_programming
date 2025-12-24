@@ -13,7 +13,7 @@ unsigned int j;
 unsigned int somme = 0;
 
 if (n == 0)
-return ('\0');
+return (0);
 
 va_start(ap, n);
 for (j = 0; j < n; j++)
