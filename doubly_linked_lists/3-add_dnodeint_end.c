@@ -15,26 +15,32 @@
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *temp;
+	dlistint_t *newnode = malloc(sizeof(dlistint_t));
 
-	dlistint_t *NewNode = malloc(sizeof(dlistint_t));
+	if (newnode == NULL)
+	{
+		return (NULL);
+	}
 
-	NewNode->n = n;
-	NewNode->next = NULL;
-	NewNode->prev = NULL;
+	newnode->n = n;
+	newnode->next = NULL;
+	newnode->prev = NULL;
 
 	if (*head == NULL)
 	{
-		*head = NewNode;
-		return (NewNode);
+		*head = newnode;
+		return (newnode);
 	}
 
 	temp = *head;
+
 	while (temp->next != NULL)
 	{
 		temp = temp->next;
 	}
-	temp->next = NewNode;
-	NewNode->prev = temp;
+	temp->next = newnode;
+	newnode->prev = temp;
 
-	return (NewNode);
+	return (newnode);
+
 }
