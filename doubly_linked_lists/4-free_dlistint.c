@@ -7,8 +7,9 @@
  * free_dlistint - will free every value stock in every chunck of the list h
  *
  * @head: list of type list_t
- *
+ * 
  * Return: void
+ *
  */
 
 
