@@ -15,20 +15,13 @@
 
 void free_dlistint(dlistint_t *head)
 {
-	dlistint_t *temp = head;
+	dlistint_t *free_struct;
 
-	if (head == NULL)
+	while (head != NULL)
 	{
-		return;
-	}
-
-	head = (head)->next;
-
-	if (head != NULL)
-	{
-		temp = head->next;
+		free_struct = head->next;
 		free(head);
-		head = temp;
+		head = free_struct;
 	}
 
 
