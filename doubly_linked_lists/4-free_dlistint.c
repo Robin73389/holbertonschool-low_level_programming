@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 /**
- * free_list - will free every value stock in every chunck of the list h
+ * free_dlistint - will free every value stock in every chunck of the list h
  *
  * @head: list of type list_t
  *
@@ -14,11 +14,19 @@
 
 void free_dlistint(dlistint_t *head)
 {
-    if (head->next == NULL)
-    {
-        free(head);
-        head = NULL;
+	dlistint_t *temp = head;
 
-        return;
-    }
+	if (head == NULL)
+	{
+		return (head);
+	}
+
+	head = (head)->next;
+
+	if (head != NULL)
+	{
+		(head)->prev = NULL;
+	}
+
+	free(temp);
 }
